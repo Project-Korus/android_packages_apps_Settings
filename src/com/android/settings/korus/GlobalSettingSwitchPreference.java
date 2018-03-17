@@ -61,4 +61,7 @@ public class GlobalSettingSwitchPreference extends SwitchPreference {
         setChecked(Settings.Global.getString(getContext().getContentResolver(), getKey()) != null ? getPersistedBoolean(isChecked())
                 : (Boolean) defaultValue);
     }
+    public void setPersistedBoolean(boolean value) {
+        persistBoolean(value);
+    }
 }
