@@ -26,11 +26,13 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
 
-        <!-- LineageOS updates -->
-        <org.lineageos.internal.preference.deviceinfo.LineageUpdatesPreference
-                android:key="lineage_updates"
-                lineage:requiresOwner="true"
-                lineage:requiresPackage="org.lineageos.updater" />
+        <!-- Korus Project OTA -->
+        <Preference android:title="@string/korus_ota_title"
+            android:summary="@string/korus_ota_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.korus.ota"
+                android:targetClass="com.korus.ota.MainActivity" />
+        </Preference>
 
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
