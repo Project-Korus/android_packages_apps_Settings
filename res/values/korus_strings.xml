@@ -17,4 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="korus_ota_title">Updates</string>
     <string name="korus_ota_summary">Check update now</string>
+    <string name="korus_about_title">About Us</string>
+    <string name="korus_about_summary">Introduce our team and this project</string>
 </resources>
