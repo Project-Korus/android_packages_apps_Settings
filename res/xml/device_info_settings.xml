@@ -26,6 +26,12 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
 
+             <!-- Korus Project About Us -->
+        <Preference android:key="korus_about_title"
+                android:title="@string/korus_about_title"
+                android:summary="@string/korus_about_summary"
+                android:fragment="com.android.settings.aboutus"/>
+     
         <!-- Korus Project OTA -->
         <Preference android:title="@string/korus_ota_title"
             android:summary="@string/korus_ota_summary">
