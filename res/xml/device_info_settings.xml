@@ -26,19 +26,11 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
 
-             <!-- Korus Project About Us -->
+        <!-- About Korus Project -->
         <Preference android:key="korus_about_title"
                 android:title="@string/korus_about_title"
                 android:summary="@string/korus_about_summary"
-                android:fragment="com.android.settings.aboutus"/>
-     
-        <!-- Korus Project OTA -->
-        <Preference android:title="@string/korus_ota_title"
-            android:summary="@string/korus_ota_summary">
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.korus.ota"
-                android:targetClass="com.korus.ota.MainActivity" />
-        </Preference>
+                android:fragment="com.android.settings.korus.About"/>
 
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
@@ -90,10 +82,6 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/summary_placeholder"/>
 
-        <!-- LineageOS version -->
-        <org.lineageos.internal.preference.deviceinfo.LineageVersionPreference
-                android:key="lineage_version" />
-
         <!-- LineageOS API version -->
         <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
                 android:key="lineage_api_level" />
@@ -127,10 +115,6 @@
                 android:key="kernel_version"
                 android:title="@string/kernel_version"
                 android:summary="@string/summary_placeholder"/>
-
-        <!-- Build date -->
-        <org.lineageos.internal.preference.deviceinfo.LineageBuildDatePreference
-                android:key="build_date" />
 
         <!-- Detailed build version -->
         <Preference
